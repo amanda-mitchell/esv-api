@@ -1,9 +1,11 @@
-require('dotenv').config();
-const fetch = require('node-fetch');
-const { createEsvApiClient } = require('..');
+import { config as initializeEnvironment } from 'dotenv';
+import fetch from 'node-fetch';
+import { createEsvApiClient } from '../client';
+
+initializeEnvironment();
 
 describe('integration tests', () => {
-  const apiKey = process.env['ESV_API_KEY'];
+  const apiKey = process.env['ESV_API_KEY']!;
 
   // We can't perform integration tests unless we have
   // an API key, which should not be stored in the repository.

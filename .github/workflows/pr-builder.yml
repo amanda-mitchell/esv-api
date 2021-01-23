@@ -16,11 +16,13 @@ jobs:
       - name: Prettier check
         run: yarn prettier --check "./**/*.{js,md}"
       - name: Lint
-        run: yarn eslint "./**/*.js"
+        run: yarn eslint './lib/**/*.{js,ts,jsx,tsx}'
+      - name: Typescript compile
+        run: yarn tsc'
       - name: Test
         env:
           ESV_API_KEY: ${{ secrets.ESV_API_KEY }}
-        run: yarn jest
+        run: yarn jest dist
       - name: Merge
         if: ${{ github.event.pull_request.user.login == 'dependabot-preview[bot]' }}
         run: |
