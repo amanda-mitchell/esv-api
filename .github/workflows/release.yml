@@ -18,7 +18,7 @@ jobs:
       - name: Lint
         run: yarn eslint './lib/**/*.{js,ts,jsx,tsx}'
       - name: Typescript compile
-        run: yarn tsc'
+        run: yarn tsc
       - name: Test
         env:
           ESV_API_KEY: ${{ secrets.ESV_API_KEY }}
