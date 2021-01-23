@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@amanda-mitchell/node-project-scripts@^2.27.0":
-  version "2.27.0"
-  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-2.27.0.tgz#0a12a05c4505e678af17a984dbc11b3f153d40c1"
-  integrity sha512-Chd2zzYyybtv/1fqEXugjodZXr7FkeVK5nSwSAzPmAe47pA7HOcJzmxqzr4c/b2oo8jbM6RoofMVAAewFvC3LA==
+"@amanda-mitchell/node-project-scripts@^2.36.0":
+  version "2.36.0"
+  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-2.36.0.tgz#15f560309d9eced87e09c7dd01a7cf04bcad1c95"
+  integrity sha512-3+WqLkr5p1d71oiHFSGxgafJ4yXgJQSFdITvFvE3tLiL3XQe5LlDDiBRVbZfLNqReKPYEgxCo53R2ZkZoQ1CXQ==
   dependencies:
     "@amanda-mitchell/semantic-release-notify-dependabot" "^1.0.0"
     "@amanda-mitchell/semantic-release-npm-multiple" "^2.1.1"
