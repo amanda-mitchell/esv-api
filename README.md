@@ -1,6 +1,6 @@
 # @amanda-mitchell/esv-api
 
-![Node.js CI](https://github.com/amanda-mitchell/esv-api/workflows/Node.js%20CI/badge.svg)
+![Release](https://github.com/amanda-mitchell/esv-api/workflows/Release/badge.svg)
 
 This is a Javascript client for Crossway's [ESV API](https://api.esv.org/).
 
