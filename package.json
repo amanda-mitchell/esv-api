@@ -15,7 +15,8 @@
     "dist/**/*.js",
     "dist/**/*.map",
     "dist/**/*.d.ts",
-    "!**/__tests__"
+    "!**/__tests__",
+    "tsconfig.json"
   ],
   "dependencies": {},
   "devDependencies": {
