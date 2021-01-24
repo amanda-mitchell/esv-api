@@ -1,5 +1,1 @@
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  modulePathIgnorePatterns: ['.*\\.d\\.ts$'],
-};
+module.exports = require('@amanda-mitchell/node-project-scripts/jest.config');
