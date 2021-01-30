@@ -17,6 +17,7 @@
     "dist/**/*.d.ts",
     "!**/__tests__"
   ],
+  "types": "dist/index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@amanda-mitchell/node-project-scripts": "^2.36.0",
