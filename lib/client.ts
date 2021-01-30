@@ -1,6 +1,3 @@
-import type fetch from 'node-fetch';
-import type { Response } from 'node-fetch';
-
 const baseUrl = 'https://api.esv.org/v3';
 
 type ReadablePassageReference = string;
@@ -113,12 +110,33 @@ const passageSearchEndpoint = defineEndpoint({
   },
 });
 
-type EsvClientOptions = {
-  apiKey: string;
-  fetch: typeof fetch;
+// Different implementations of fetch have subtle incompatibilities with
+// each other: in particular, node-fetch is missing a few bits that are
+// described in the official spec. In order to be compatible with as many
+// fetch implementations as possible, we declare the precise API surface
+// that this library requires.
+type FetchMethod<TBlob> = (
+  input: string,
+  init?: RequestInit
+) => Promise<Response<TBlob>>;
+
+type RequestInit = { method: string; headers: Record<string, string> };
+type Response<TBlob> = {
+  ok: boolean;
+  json: <T>() => Promise<T>;
+  text: () => Promise<string>;
+  blob: () => Promise<TBlob>;
 };
 
-export function createEsvApiClient({ apiKey, fetch }: EsvClientOptions) {
+type EsvClientOptions<TBlob> = {
+  apiKey: string;
+  fetch: FetchMethod<TBlob>;
+};
+
+export function createEsvApiClient<TBlob>({
+  apiKey,
+  fetch,
+}: EsvClientOptions<TBlob>) {
   const fetchOptions = {
     method: 'GET',
     headers: { Authorization: `Token ${apiKey}` },
@@ -126,7 +144,7 @@ export function createEsvApiClient({ apiKey, fetch }: EsvClientOptions) {
 
   function createRequestGenerator<TOptions, TResult>(
     endpoint: (query: string, options: Partial<TOptions>) => string,
-    responseHandler: (response: Response) => Promise<TResult>
+    responseHandler: (response: Response<TBlob>) => Promise<TResult>
   ) {
     return async (query: string, options?: Partial<TOptions>) => {
       const response = await fetch(
