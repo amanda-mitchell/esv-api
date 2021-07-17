@@ -24,7 +24,7 @@ jobs:
           ESV_API_KEY: ${{ secrets.ESV_API_KEY }}
         run: yarn jest dist
       - name: Merge
-        if: ${{ github.event.pull_request.user.login == 'dependabot-preview[bot]' }}
+        if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
         run: |
           curl --request PUT \
           --url ${{ github.event.pull_request.url }}/merge \
