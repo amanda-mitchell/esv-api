@@ -249,11 +249,10 @@ type Options<T extends OptionConverters> = {
   >;
 };
 
-type KebabToCamelCase<
-  T extends string
-> = T extends `${infer Prefix}-${infer Suffix}`
-  ? `${Prefix}${Capitalize<KebabToCamelCase<Suffix>>}`
-  : T;
+type KebabToCamelCase<T extends string> =
+  T extends `${infer Prefix}-${infer Suffix}`
+    ? `${Prefix}${Capitalize<KebabToCamelCase<Suffix>>}`
+    : T;
 
 function convertOptions<T extends OptionConverters>(
   query: string,
