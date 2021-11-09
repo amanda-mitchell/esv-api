@@ -23,6 +23,6 @@
     "@amanda-mitchell/node-project-scripts": "^2.36.0",
     "@types/node-fetch": "^2.5.8",
     "dotenv": "^10.0.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.1.0"
   }
 }
