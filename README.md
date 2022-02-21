@@ -13,15 +13,15 @@ yarn add @amanda-mitchell/esv-api
 ## Usage
 
 ```js
-const esvApi = require('@amanda-mitchell/esv-api');
+import { createEsvApiClient } from '@amanda-mitchell/esv-api';
 
 // This can be any method that is compatible with the Fetch interface.
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 const apiKey =
   'Go to https://api.esv.org/ to register an application and get an API key.';
 
-const client = esvApi.createEsvApiClient({ apiKey, fetch });
+const client = createEsvApiClient({ apiKey, fetch });
 
 client
   .content({
