@@ -14,14 +14,15 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile --ignore-scripts
       - name: Prettier check
-        run: yarn prettier --check "./lib/*.{js,ts,md,jsx,tsx}"
+        run: yarn prettier --check "./lib/*.{js,ts,md,jsx,tsx,cjs,mjs}"
       - name: Lint
-        run: yarn eslint './lib/**/*.{js,ts,jsx,tsx}'
+        run: yarn eslint './lib/**/*.{js,ts,jsx,tsx,cjs,mjs}'
       - name: Typescript compile
         run: yarn tsc
       - name: Test
         env:
           ESV_API_KEY: ${{ secrets.ESV_API_KEY }}
+          NODE_OPTIONS: --experimental-vm-modules
         run: yarn jest dist
   release:
     needs: build
