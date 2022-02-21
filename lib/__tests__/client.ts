@@ -1,8 +1,6 @@
-import { config as initializeEnvironment } from 'dotenv';
+import 'dotenv/config';
 import fetch from 'node-fetch';
 import { createEsvApiClient } from '../client';
-
-initializeEnvironment();
 
 describe('integration tests', () => {
   const apiKey = process.env['ESV_API_KEY']!;
