@@ -93,7 +93,7 @@ describe('integration tests', () => {
           },
         ],
         passages: [
-          `<h2 class="extra_text">Genesis 1:1 <small class="audio extra_text">(<a class="mp3link" href="https://audio.esv.org/hw/01001001-01001001.mp3" title="Genesis 1:1" type="audio/mpeg">Listen</a>)</small></h2>
+          `<h2 class="extra_text">Genesis 1:1 <small class="audio extra_text">(<a class="mp3link" href="https://audio.esv.org/david-cochran-heath/mq/01001001-01001001.mp3" title="Genesis 1:1" type="audio/mpeg">Listen</a>)</small></h2>
 <h3 id="p01001001_01-1">The Creation of the World</h3>
 <p id="p01001001_06-1" class="starts-chapter"><b class="chapter-num" id="v01001001-1">1:1&nbsp;</b>In the beginning, God created the heavens and the earth.</p>
 <p>(<a href="http://www.esv.org" class="copyright">ESV</a>)</p>`,
