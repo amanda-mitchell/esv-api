@@ -25,6 +25,6 @@
     "@jest/globals": "^27.5.1",
     "@types/node-fetch": "^2.5.8",
     "dotenv": "^16.0.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.2.0"
   }
 }
