@@ -237,7 +237,7 @@ type OptionConverters = {
 };
 
 type OptionsListing<T extends OptionConverters> = {
-  [Key in keyof T & string as KebabToCamelCase<Key>]: {
+  [Key in KebabToCamelCase<keyof T & string>]: {
     apiName: Key;
     coerceValue: T[Key];
   };
