@@ -123,7 +123,7 @@ type FetchMethod<TBlob> = (
 type RequestInit = { method: string; headers: Record<string, string> };
 type Response<TBlob> = {
   ok: boolean;
-  json: <T>() => Promise<T>;
+  json: () => Promise<unknown>;
   text: () => Promise<string>;
   blob: () => Promise<TBlob>;
 };
