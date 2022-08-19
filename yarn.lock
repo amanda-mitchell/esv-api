@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@amanda-mitchell/node-project-scripts@3.114.0":
-  version "3.114.0"
-  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-3.114.0.tgz#9dc91155b72c349febb85a7067469ee3bff3b8dc"
-  integrity sha512-PB6l+Ko6eAjHPIPsxUDLlntMAH/ZLutH24zvfq7/no3fxKNqbHvnPTrHqA7FrgimyotsleYn91vyiw26JlZrBg==
+"@amanda-mitchell/node-project-scripts@3.115.0":
+  version "3.115.0"
+  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-3.115.0.tgz#f56d3fde1344f4684aef33fdf4f11a9db1612fc6"
+  integrity sha512-wiOactG9TjOzsLF3+OCuKH1GLvMC05NnNZ85nenRzyJktfX77/7ZSggzJUrweCX/1oZTjkzv8ubsekjjWp9WSg==
   dependencies:
     "@amanda-mitchell/semantic-release-npm-multiple" "^3.0.0"
     "@commitlint/cli" "^17.0.0"
@@ -18,7 +18,7 @@
     husky "4.x"
     jest "^27.5.1"
     lint-staged "^13.0.0"
-    pkg-dir "^6.0.0"
+    pkg-dir "^7.0.0"
     prettier "2.7.1"
     semantic-release "^19.0.2"
     ts-jest "^27.1.3"
@@ -3125,7 +3125,7 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
-find-up@^6.1.0:
+find-up@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-6.3.0.tgz#2abab3d3280b2dc7ac10199ef324c4e002c8c790"
   integrity sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==
@@ -5718,12 +5718,12 @@ pkg-dir@^5.0.0:
   dependencies:
     find-up "^5.0.0"
 
-pkg-dir@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-6.0.1.tgz#8ec964cecaef98a2bdb9c164733f90a5bcd2352d"
-  integrity sha512-C9R+PTCKGA32HG0n5I4JMYkdLL58ZpayVuncQHQrGeKa8o26A4o2x0u6BKekHG+Au0jv5ZW7Xfq1Cj6lm9Ag4w==
+pkg-dir@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-7.0.0.tgz#8f0c08d6df4476756c5ff29b3282d0bab7517d11"
+  integrity sha512-Ie9z/WINcxxLp27BKOCHGde4ITq9UklYKDzVo1nhk5sqGEXU3FpkwP5GM2voTGJkGd9B3Otl+Q4uwSOeSUtOBA==
   dependencies:
-    find-up "^6.1.0"
+    find-up "^6.3.0"
 
 please-upgrade-node@^3.2.0:
   version "3.2.0"
