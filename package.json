@@ -21,7 +21,7 @@
   "types": "dist/index.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "@amanda-mitchell/node-project-scripts": "3.177.0",
+    "@amanda-mitchell/node-project-scripts": "3.179.0",
     "@jest/globals": "^29.0.0",
     "dotenv": "^16.0.0",
     "node-fetch": "^3.2.2"
