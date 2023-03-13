@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@amanda-mitchell/node-project-scripts@3.185.0":
-  version "3.185.0"
-  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-3.185.0.tgz#ee9cd7d0958df073ed7977a364ffdd2565487b85"
-  integrity sha512-xqbw3WAxWy3JLzVKAtm0VgrzS3FXJ/QyWS8vBc+Jhv/a9wcBuTdtEVrxvRGUedDQ/G+sK6B9F9j0/cSYcxuf8Q==
+"@amanda-mitchell/node-project-scripts@3.223.0":
+  version "3.223.0"
+  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-3.223.0.tgz#9d364eb37d884ec8928c1da0fe912e36dde2a287"
+  integrity sha512-UgLZU/dMvopQFpPhOYjaL5O1TQmaagOs/ZaR/POELH32OsGw1DxZ/kpiQBbzlRae7SUuEj0OK4Onamnjn4+tAw==
   dependencies:
     "@amanda-mitchell/semantic-release-npm-multiple" "^3.0.0"
     "@commitlint/cli" "^17.0.0"
@@ -19,7 +19,7 @@
     jest "^27.5.1"
     lint-staged "^13.0.0"
     pkg-dir "^7.0.0"
-    prettier "2.8.1"
+    prettier "2.8.4"
     semantic-release "^19.0.2"
     ts-jest "^27.1.3"
     typescript "^4.1.3"
@@ -5756,10 +5756,10 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier@2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.1.tgz#4e1fd11c34e2421bc1da9aea9bd8127cd0a35efc"
-  integrity sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==
+prettier@2.8.4:
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
+  integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
 
 pretty-format@^27.0.0, pretty-format@^27.5.1:
   version "27.5.1"
