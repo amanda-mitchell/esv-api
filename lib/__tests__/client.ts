@@ -190,7 +190,7 @@ describe('integration tests', () => {
           {
             content:
               'You shall not bring the fee of a prostitute or the wages of a dog into the house of the LORD your God in payment for any vow, for both of these are an abomination to the LORD your God.',
-            reference: 'Exodus 22:31',
+            reference: 'Deuteronomy 23:18',
           },
         ],
         total_pages: 15,
