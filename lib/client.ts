@@ -220,7 +220,7 @@ function defineEndpoint<TOptionValidators extends AvailableOptions>({
 
   type EndpointOptions = {
     [Key in keyof typeof optionListing & string]?: ReturnType<
-      typeof optionListing[Key]['coerceValue']
+      (typeof optionListing)[Key]['coerceValue']
     >;
   };
 
