@@ -167,17 +167,17 @@ describe('integration tests', () => {
           },
           {
             content:
-              '“You shall be consecrated to me. Therefore you shall not eat any flesh that is torn by beasts in the field; you shall throw it to the dogs.',
-            reference: 'Exodus 22:31',
-          },
-          {
-            content:
               'You shall not bring the fee of a prostitute or the wages of a dog into the house of the LORD your God in payment for any vow, for both of these are an abomination to the LORD your God.',
             reference: 'Deuteronomy 23:18',
           },
+          {
+            content:
+              'So he brought the people down to the water. And the LORD said to Gideon, “Every one who laps the water with his tongue, as a dog laps, you shall set by himself. Likewise, every one who kneels down to drink.”',
+            reference: 'Judges 7:5',
+          },
         ],
-        total_pages: 14,
-        total_results: 41,
+        total_pages: 5,
+        total_results: 15,
       });
     });
 
@@ -189,12 +189,12 @@ describe('integration tests', () => {
         results: [
           {
             content:
-              '“You shall be consecrated to me. Therefore you shall not eat any flesh that is torn by beasts in the field; you shall throw it to the dogs.',
+              'You shall not bring the fee of a prostitute or the wages of a dog into the house of the LORD your God in payment for any vow, for both of these are an abomination to the LORD your God.',
             reference: 'Exodus 22:31',
           },
         ],
-        total_pages: 41,
-        total_results: 41,
+        total_pages: 15,
+        total_results: 15,
       });
     });
   });
