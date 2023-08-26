@@ -314,7 +314,7 @@ function createParameter<
       apiName: parameterName,
       coerceValue,
     },
-  } as OptionsListing<{ [Key in TName]: TCoerce }>;
+  } as unknown as OptionsListing<{ [Key in TName]: TCoerce }>;
 }
 
 function convertParameterName<TName extends string>(parameterName: TName) {
