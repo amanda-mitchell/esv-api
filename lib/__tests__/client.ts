@@ -40,7 +40,7 @@ describe('integration tests', () => {
       expect(
         await createClient().passageText('Gen 1:1; Gen 2:1', {
           includePassageReferences: false,
-        })
+        }),
       ).toEqual({
         canonical: 'Genesis 1:1; Genesis 2:1',
         parsed: [
@@ -107,7 +107,7 @@ describe('integration tests', () => {
         await createClient().passageHtml('Gen 1:1; Gen 2:1', {
           includePassageReferences: false,
           includeHeadings: false,
-        })
+        }),
       ).toEqual({
         canonical: 'Genesis 1:1; Genesis 2:1',
         parsed: [
@@ -156,7 +156,7 @@ describe('integration tests', () => {
   describe('passageSearch', () => {
     it('gets search results', async () => {
       expect(
-        await createClient().passageSearch('dog', { pageSize: 3 })
+        await createClient().passageSearch('dog', { pageSize: 3 }),
       ).toEqual({
         page: 1,
         results: [
@@ -183,7 +183,7 @@ describe('integration tests', () => {
 
     it('supports paging', async () => {
       expect(
-        await createClient().passageSearch('dog', { pageSize: 1, page: 2 })
+        await createClient().passageSearch('dog', { pageSize: 1, page: 2 }),
       ).toEqual({
         page: 2,
         results: [
