@@ -117,7 +117,7 @@ const passageSearchEndpoint = defineEndpoint({
 // that this library requires.
 type FetchMethod<TBlob> = (
   input: string,
-  init?: RequestInit
+  init?: RequestInit,
 ) => Promise<Response<TBlob>>;
 
 type RequestInit = { method: string; headers: Record<string, string> };
@@ -144,12 +144,12 @@ export function createEsvApiClient<TBlob>({
 
   function createRequestGenerator<TOptions, TResult>(
     endpoint: (query: string, options: Partial<TOptions>) => string,
-    responseHandler: (response: Response<TBlob>) => Promise<TResult>
+    responseHandler: (response: Response<TBlob>) => Promise<TResult>,
   ) {
     return async (query: string, options?: Partial<TOptions>) => {
       const response = await fetch(
         endpoint(query, options || {}),
-        fetchOptions
+        fetchOptions,
       );
 
       if (!response.ok) {
@@ -163,18 +163,18 @@ export function createEsvApiClient<TBlob>({
   return {
     passageText: createRequestGenerator(
       passageTextEndpoint,
-      response => response.json() as Promise<PassageContentResult>
+      response => response.json() as Promise<PassageContentResult>,
     ),
     passageHtml: createRequestGenerator(
       passageHtmlEndpoint,
-      response => response.json() as Promise<PassageContentResult>
+      response => response.json() as Promise<PassageContentResult>,
     ),
     passageAudio: createRequestGenerator(passageAudioEndpoint, response =>
-      response.blob()
+      response.blob(),
     ),
     passageSearch: createRequestGenerator(
       passageSearchEndpoint,
-      response => response.json() as Promise<SearchResult>
+      response => response.json() as Promise<SearchResult>,
     ),
   };
 }
@@ -257,7 +257,7 @@ type KebabToCamelCase<T extends string> =
 function convertOptions<T extends OptionConverters>(
   query: string,
   options: Partial<Options<T>>,
-  convertOption: (tuple: Entries<Options<T>>) => any
+  convertOption: (tuple: Entries<Options<T>>) => any,
 ) {
   const entries = Object.entries(options) as Entries<Options<T>>[];
 
@@ -268,15 +268,15 @@ function convertOptions<T extends OptionConverters>(
 }
 
 function createOptionConverter<T extends OptionConverters>(
-  availableOptions: OptionsListing<T>
+  availableOptions: OptionsListing<T>,
 ) {
   return ([parameterName, value]: Entries<Options<T>>) => {
     const handler = availableOptions[parameterName];
     if (!handler) {
       throw new Error(
         `Option ${parameterName} does not exist for this endpoint. Available options are ${Object.keys(
-          availableOptions
-        ).join(', ')}`
+          availableOptions,
+        ).join(', ')}`,
       );
     }
 
@@ -288,26 +288,26 @@ function renderQueryString(queryParameters: { [key: string]: any }) {
   return Object.entries(queryParameters)
     .map(
       ([key, value]) =>
-        `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+        `${encodeURIComponent(key)}=${encodeURIComponent(value)}`,
     )
     .join('&');
 }
 
 function defineEndpointAvailableOptions<TOptions extends AvailableOptions>(
-  options: TOptions
+  options: TOptions,
 ): OptionsListing<TOptions> {
   const entries = Object.entries(options) as Entries<TOptions>[];
 
   return Object.assign(
     {},
-    ...entries.map(([key, value]) => createParameter(key, value))
+    ...entries.map(([key, value]) => createParameter(key, value)),
   );
 }
 
 function createParameter<
   TName extends string,
   TParameter,
-  TCoerce extends (value: any) => TParameter
+  TCoerce extends (value: any) => TParameter,
 >(parameterName: TName, coerceValue: TCoerce) {
   return {
     [convertParameterName(parameterName)]: {
