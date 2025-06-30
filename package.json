@@ -23,7 +23,7 @@
   "devDependencies": {
     "@amanda-mitchell/node-project-scripts": "^4.117.0",
     "@jest/globals": "^30.0.0",
-    "dotenv": "^16.0.0",
+    "dotenv": "^17.0.0",
     "node-fetch": "^3.2.2"
   }
 }
