@@ -3,9 +3,9 @@
 
 
 "@amanda-mitchell/node-project-scripts@^4.117.0":
-  version "4.178.0"
-  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-4.178.0.tgz#5c234b9b0e072dc8b93f97a8edc6258d31e82e65"
-  integrity sha512-Q2x4SOvWfzwqwzA6M4ZNzxOlxS08PHyYhQOhOhmgf1qibBoSSYzs/1uVtO5z+DhCiCtAxdGwI6inlxCgWN1vvw==
+  version "4.179.0"
+  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-4.179.0.tgz#4a92696333c30a8b228deffbef62e73a0a103e28"
+  integrity sha512-0fWlHjHRdfy4OZstkek19Y1pOoOg/MajNP0bKKwr0oCdGfZMK3gpSOMno5qPqgNCX/bD2Dj4VJ4S7dfkuwnALw==
   dependencies:
     "@amanda-mitchell/semantic-release-npm-multiple" "^3.11.0"
     "@commitlint/cli" "^19.0.0"
@@ -18,7 +18,7 @@
     husky "4.x"
     jest "^30.0.0"
     lint-staged "^16.0.0"
-    pkg-dir "^8.0.0"
+    pkg-dir "^9.0.0"
     prettier "3.6.2"
     semantic-release "^24.2.0"
     ts-jest "29.4.0"
@@ -5985,10 +5985,10 @@ pkg-dir@^5.0.0:
   dependencies:
     find-up "^5.0.0"
 
-pkg-dir@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-8.0.0.tgz#8f3de8ba83d46b72a05c80bfd4e579f060fa91e2"
-  integrity sha512-4peoBq4Wks0riS0z8741NVv+/8IiTvqnZAr8QGgtdifrtpdXbNw/FxRS1l6NFqm4EMzuS0EDqNNx4XGaz8cuyQ==
+pkg-dir@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-9.0.0.tgz#79d0ca53023fa93f848ba960d75df4476e1fbb1f"
+  integrity sha512-BMmxOuokumBehLGYwCKMBJxpAGSBbvGTtDn1yUV9UpCAvC4F7UWHoPTGSDGPV8eQPkYq/G8b0g1W5vIc5K/EhA==
   dependencies:
     find-up-simple "^1.0.0"
 
