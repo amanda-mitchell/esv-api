@@ -3,9 +3,9 @@
 
 
 "@amanda-mitchell/node-project-scripts@^4.117.0":
-  version "4.180.0"
-  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-4.180.0.tgz#753940c5f49306bb7cf5207dd40c1a39d1c54161"
-  integrity sha512-0sDkQPeQ/KxTieUnGViiWe/5pHR3/kbcR8CTP+R1/7pyITSzdqpd4cN30erZAECpHmUkM0u5QP0Cs+1D7E7keQ==
+  version "4.181.0"
+  resolved "https://registry.yarnpkg.com/@amanda-mitchell/node-project-scripts/-/node-project-scripts-4.181.0.tgz#821087372a086d5eb95477bf0baf4e1737568dd5"
+  integrity sha512-Z4+3C+XHx2EZj4h8ufybyt6tSymCYeVTFogdVWOy5UqGC+VzhWL8K/Sowi8n6FA92RtsPzt5HLP3Hgmebx+wEw==
   dependencies:
     "@amanda-mitchell/semantic-release-npm-multiple" "^3.11.0"
     "@commitlint/cli" "^19.0.0"
@@ -22,7 +22,7 @@
     prettier "3.6.2"
     semantic-release "^24.2.0"
     ts-jest "29.4.0"
-    typescript "5.8.3"
+    typescript "5.9.2"
 
 "@amanda-mitchell/semantic-release-npm-multiple@^3.11.0":
   version "3.11.1"
@@ -6976,10 +6976,10 @@ type-fest@^4.6.0, type-fest@^4.7.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.27.0.tgz#57329aae32e7b27b942b961e3ef861f0873c4b1b"
   integrity sha512-3IMSWgP7C5KSQqmo1wjhKrwsvXAtF33jO3QY+Uy++ia7hqvgSK6iXbbg5PbDBc1P2ZbNEDgejOrN4YooXvhwCw==
 
-typescript@5.8.3:
-  version "5.8.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.3.tgz#92f8a3e5e3cf497356f4178c34cd65a7f5e8440e"
-  integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
+typescript@5.9.2:
+  version "5.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.9.2.tgz#d93450cddec5154a2d5cabe3b8102b83316fb2a6"
+  integrity sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==
 
 uglify-js@^3.1.4:
   version "3.16.0"
